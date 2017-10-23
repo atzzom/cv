@@ -1,0 +1,49 @@
+/* Imported fonts */
+
+/* CSS Reset */
+
+/* Mobile first & RWD styles */
+
+/* Document's style */
+
+	body {
+		/* Use another type of background, e.g. a pattern, gradient, or background image. */
+		margin: 0;
+	}
+
+	.slide {
+		height: 100vh;
+		margin: 0 auto;
+	}
+	
+	.intro {
+		background-clip: content-box;
+		background-color: black;
+		background-image: url("../media/sunset-background.jpg");
+		background-repeat: no-repeat;
+		/* background-position: 50% 0; */
+		background-size: auto 100%;
+		/* margin: 0 auto; */
+		position: relative; /* The purpose of this positioned element is to be the conatiner box fo the nested positioned img elements. */
+	}
+
+	.foreground  {
+		background-image: url("../media/sunset-foreground.jpg");
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		height: 100vh;
+		opacity: 0.65;
+		position: absolute;
+		/* margin: 0 auto; */
+		top: -3.462603878116%;
+		/* left: 29.296875%; */
+		width: 70.703125%;
+		overflow: hidden;
+	}
+
+	.foreground img {
+		height: 100vh;
+		left: -29.296875%;
+		position: relative;
+		size: auto 100%;
+	}
