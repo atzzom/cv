@@ -6,9 +6,13 @@
 
 /* Document's style */
 
-	body {
-		/* Use another type of background, e.g. a pattern, gradient, or background image. */
+	* {
+		border: 1px dotted red;
+		box-sizing: border-box;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 2.5vh;
 		margin: 0;
+		padding: 0;
 	}
 
 	.slide {
@@ -16,14 +20,11 @@
 		margin: 0 auto;
 	}
 	
-	.intro {
-		background-clip: content-box;
-		background-color: black;
+	.background {
+		background-color: silver;
 		background-image: url("../media/sunset-background.jpg");
 		background-repeat: no-repeat;
-		/* background-position: 50% 0; */
 		background-size: auto 100%;
-		/* margin: 0 auto; */
 		position: relative; /* The purpose of this positioned element is to be the conatiner box fo the nested positioned img elements. */
 	}
 
@@ -34,16 +35,77 @@
 		height: 100vh;
 		opacity: 0.65;
 		position: absolute;
-		/* margin: 0 auto; */
 		top: -3.462603878116%;
 		/* left: 29.296875%; */
 		width: 70.703125%;
 		overflow: hidden;
 	}
 
-	.foreground img {
-		height: 100vh;
-		left: -29.296875%;
-		position: relative;
-		size: auto 100%;
+	.slogan {
+		position: absolute;
+		top: 10%;
+		left: 10%;
+		text-align: center;
+		font-weight: bold;
+		text-transform: uppercase;
+		z-index: 1;
 	}
+
+	.progress {
+		color: rgba(253, 250, 142, 1);
+		font-size: 1.5em;
+		letter-spacing: 0.5em;
+	}
+
+	.nox {
+		color: rgba(234, 167, 108, 1);
+		font-size: 3.5em;
+	}
+
+	.card {
+		position: absolute;
+		right: 0;
+		top: 65%;
+		width: 29.296875%;
+	}
+
+	.pro {
+		padding: 5% 0;
+		background-color: rgba(256, 256, 256, 0.1);
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.name {
+		color: rgba(233, 212, 107, 1);
+		font-size: 2rem;
+		font-weight: bold;
+		letter-spacing: 0.15em;
+	}
+
+	.title {
+		color: rgba(254, 252, 199, 1);
+		letter-spacing: 0.8em;
+	}
+
+	.contact {
+		padding: 5% 0 5% 10%;
+	}
+
+	.contact img {
+		height: 1.2em;
+		vertical-align: top;
+	}
+
+	.contact a {
+		text-decoration: none;
+	}
+
+	.linkedin {
+		color: rgba(55, 124, 180, 1);
+	}
+
+	.gmail {
+		color: rgba(205, 57, 57, 1);
+	}
+
