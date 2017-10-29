@@ -99,6 +99,11 @@
 
 	.contact a {
 		text-decoration: none;
+		margin: 8px 0; /* Additional space for touch screens */
+	}
+
+	.github {
+		color: white;
 	}
 
 	.linkedin {
