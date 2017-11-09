@@ -10,7 +10,7 @@
 		border: 1px dotted red;
 		box-sizing: border-box;
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-size: 2.5vw;
+		font-size: 2.5vh;
 		margin: 0;
 		padding: 0;
 	}
@@ -21,23 +21,19 @@
 
 	.background {
 		background-image: url("../media/sunset-background.jpg");
-		background-repeat: no-repeat;
 		background-size: 100% auto;
+		height: 56.25vw; /* The 56.25vw value corresponds to the height of the element to preserve the 16:9 aspect ratio. This measure is necessary because rules like: height: auto; 100%; etc, won't display the elment, instead will render an element of 100% width but zero height. */
 		position: relative; /* The purpose of this positioned element is to be the conatiner box fo the nested positioned img elements. */
 	}
 
 	.foreground  {
 		background-image: url("../media/sunset-foreground.jpg");
 		background-size: 100% auto;
-		background-repeat: no-repeat;
-		height: auto;
+		height: 56.25vw; /* The 56.25vw value corresponds to the height of the element to preserve the 16:9 aspect ratio. This measure is necessary because rules like: height: auto; 100%; etc, won't display the elment, instead will render an element of 100% width but zero height. */
 		width: 100%;
 		opacity: 0.65;
 		position: absolute;
 		top: -3.462603878116%;
-		/* left: 29.296875%; */
-		/* width: 70.703125%; */
-		overflow: hidden;
 	}
 
 	.slogan {
@@ -117,9 +113,7 @@
 		background-color: rgba(0, 0, 0, 0.6);
 		background-clip: border-box;
 		color: rgba(254, 252, 199, 1);
-		position: absolute;
-		top: 100vh;
-		padding: 15% 25%;
+		padding: 15%;
 		text-align: justify;
 	}
 
