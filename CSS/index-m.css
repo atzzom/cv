@@ -2,8 +2,6 @@
 
 /* CSS Reset */
 
-/* Mobile first & RWD styles */
-
 /* Document's style */
 
 	* {
@@ -37,13 +35,9 @@
 	}
 
 	.slogan {
-		position: absolute;
-		top: 10%;
-		left: 10%;
 		text-align: center;
 		font-weight: bold;
 		text-transform: uppercase;
-		z-index: 1;
 	}
 
 	.progress {
@@ -55,13 +49,6 @@
 	.nox {
 		color: rgba(234, 167, 108, 1);
 		font-size: 3.5em;
-	}
-
-	.card {
-		position: absolute;
-		right: 0;
-		top: 65%;
-		width: 29.296875%;
 	}
 
 	.pro {
@@ -84,7 +71,7 @@
 	}
 
 	.contact {
-		padding: 5% 0 5% 10%;
+		margin: auto 5%;
 	}
 
 	.contact img {
@@ -94,7 +81,8 @@
 
 	.contact a {
 		text-decoration: none;
-		margin: 8px 0; /* Additional space for touch screens */
+		line-height: 1.5rem;
+		margin: 8px; /* Additional space for touch screens */
 	}
 
 	.github {
